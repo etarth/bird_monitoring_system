@@ -1,21 +1,23 @@
+import React from 'react';
+
 const BirdStatus = ({ data }) => {
   return (
-    <div className="mt-6 grid grid-cols-2 gap-4">
-      <div className="bg-blue-100 p-4 rounded-lg shadow">
-        <h3 className="text-xl font-semibold text-blue-600">Food Level</h3>
-        <p className="text-2xl font-bold text-gray-800">{data.foodLevel} g</p>
+    <div className="w-full h-full bg-white rounded-[24px]">
+      <div className="">
+        <h3 className="">Food Weight</h3>
+        <p className="">{data.foodWeight} g</p>
       </div>
-      <div className="bg-green-100 p-4 rounded-lg shadow">
-        <h3 className="text-xl font-semibold text-green-600">Humidity</h3>
-        <p className="text-2xl font-bold text-gray-800">{data.humidity} %</p>
+      <div className="">
+        <h3 className="">Humidity</h3>
+        <p className="">{data.humidity} %</p>
       </div>
-      <div className="bg-yellow-100 p-4 rounded-lg shadow">
-        <h3 className="text-xl font-semibold text-yellow-600">Light Level</h3>
-        <p className="text-2xl font-bold text-gray-800">{data.lightLevel} lux</p>
+      <div className="">
+        <h3 className="">Light Level</h3>
+        <p className="">{data.lightLevel} lux</p>
       </div>
-      <div className="bg-red-100 p-4 rounded-lg shadow">
-        <h3 className="text-xl font-semibold text-red-600">Temperature</h3>
-        <p className="text-2xl font-bold text-gray-800">{data.temperature} °C</p>
+      <div className="">
+        <h3 className="">Temperature</h3>
+        <p className="">{data.temperature} °C</p>
       </div>
     </div>
   );

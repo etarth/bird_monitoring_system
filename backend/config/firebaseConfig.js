@@ -1,7 +1,6 @@
 const admin = require('firebase-admin');
 
-// Import the Firebase service account JSON directly
-const serviceAccount = require('../serviceAccountKey.json'); // Use the correct path to your JSON file
+const serviceAccount = require('../serviceAccountKey.json');
 
 // Initialize Firebase Admin SDK with service account credentials
 admin.initializeApp({
@@ -12,4 +11,4 @@ admin.initializeApp({
 // Get the Realtime Database reference
 const db = admin.database(); 
 
-module.exports = db; // Export the database reference for use in other files
+module.exports = db;
