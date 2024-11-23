@@ -102,19 +102,14 @@ const App = () => {
 
   return (
     <div className="flex-col min-h-screen space-y-[24px] bg-[#DBDBDC] pt-[32px] p-6 overflow-hidden">
-      <div className="relative">
         <button
           onClick={toggleMenu}
-          className="absolute -top-[10px] left-0 rounded-full transition-transform duration-300"
+          className="rounded-full transition-transform duration-300"
         >
           <span className="text-black text-[32px]">
             {isOpen ? '×' : '☰'}
           </span>
         </button>
-        <div className="flex justify-center">
-          <h1 className="text-black text-[24px] font-semibold">Elvis & Friends</h1>
-        </div>
-      </div>
 
       <div 
         className={

@@ -5,11 +5,11 @@ const CameraStream = () => {
   const streamURL = 'http://192.168.x.x:81/stream';
 
   return (
-    <div className="w-full h-full bg-white rounded-[24px]">
+    <div className="relative flex-col space-y-[8px] w-full h-full rounded-[36px] overflow-hidden">
       <img
         src={streamURL}
         alt="Live camera feed"
-        className=""
+        className="bg-white h-[100vh] w-full rounded-[36px]"
       />
     </div>
   );

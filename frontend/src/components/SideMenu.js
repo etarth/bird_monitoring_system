@@ -28,14 +28,6 @@ const SideMenu = ({ selectedSection, onSelectSection }) => {
             Eating History
           </button>
         </div>
-        <div>
-          <button
-            onClick={() => onSelectSection('changeName')}
-            className={`text-[16px] font-medium text-[#989898] hover:text-[#000000] hover:text-[20px] hover:text-semibold ${selectedSection === 'changeName' ? 'text-black text-[20px] font-semibold' : ''}`}
-          >
-            Change Name
-          </button>
-        </div>
       </div>
     </div>
   );

@@ -1,24 +1,56 @@
 import React from 'react';
+import StatusItem from './StatusItem';
 
 const BirdStatus = ({ data }) => {
   return (
-    <div className="w-full h-full bg-white rounded-[24px]">
-      <div className="">
-        <h3 className="">Food Weight</h3>
-        <p className="">{data.foodWeight} g</p>
+    <div className="flex flex-col w-full h-full rounded-[24px] space-y-[4px]">
+      
+      {/* Main container with 60% width */}
+      <div className="flex flex-col items-center bg-white space-y-[8px] w-full h-full rounded-[36px] p-[8px]">
+        <div className='bg-[#DBDBDC] rounded-[30px] w-full h-full'>
+
+        </div>
+        <div className='w-full p-[16px] '>
+          <p className='text-[24px] font-semibold'>Hi👋, My name is {data.birdName}</p>
+        </div>
       </div>
-      <div className="">
-        <h3 className="">Humidity</h3>
-        <p className="">{data.humidity} %</p>
-      </div>
-      <div className="">
-        <h3 className="">Light Level</h3>
-        <p className="">{data.lightLevel} lux</p>
-      </div>
-      <div className="">
-        <h3 className="">Temperature</h3>
-        <p className="">{data.temperature} °C</p>
-      </div>
+
+
+      <StatusItem
+        iconSrc="/food.png"
+        title="Food Weight"
+        value={data.foodWeight}
+        type="food"
+        unit="g"
+      />
+      <StatusItem
+        iconSrc="/water.png"
+        title="Water Level"
+        value={data.waterLevel}
+        type="water"
+        unit="ml"
+      />
+      <StatusItem
+        iconSrc="/humidity.png"
+        title="Humidity"
+        value={data.humidity}
+        type="humidity"
+        unit="%"
+      />
+      <StatusItem
+        iconSrc="/light.png"
+        title="Light Level"
+        value={data.lightLevel}
+        type="light"
+        unit="lux"
+      />
+      <StatusItem
+        iconSrc="/temperature.png"
+        title="Temperature"
+        value={data.temperature}
+        type="temperature"
+        unit="°C"
+      />
     </div>
   );
 };
